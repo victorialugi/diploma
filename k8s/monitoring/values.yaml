@@ -1,0 +1,9 @@
+USER-SUPPLIED VALUES:
+grafana:
+  adminPassword: admin
+  service:
+    nodePort: 30030
+    type: NodePort
+prometheus:
+  prometheusSpec:
+    serviceMonitorSelectorNilUsesHelmValues: false
