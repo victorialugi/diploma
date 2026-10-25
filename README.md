@@ -1,4 +1,4 @@
-# Дипломный практикум в Yandex.Cloud
+# Дипломный практикум в "Yandex.Cloud" Виктория Лугинина 
 
 ## Что сделано
 
@@ -7,6 +7,7 @@
 - Дальнейшая работа на локальном кластере kind
 - Тестовое приложение nginx
 - Мониторинг: kube-prometheus-stack (Prometheus, Grafana, Alertmanager)
+- CI/CD: GitHub Actions собирает образ и пушит в Docker Hub, по тегу деплой в kind
 
 ## Структура
 
@@ -15,8 +16,28 @@
 - `k8s/nginx/` — Deployment и Service тестового приложения
 - `k8s/monitoring/values.yaml` — параметры kube-prometheus-stack
 - `app/` — Dockerfile и статическая страница
+- `.github/workflows/` — сборка образа и terraform plan
 
 ## Доступ
 
 - Приложение: `kubectl port-forward svc/nginx-app 8080:80`, затем http://localhost:8080
 - Grafana: `kubectl port-forward -n monitoring svc/kube-prometheus-stack-grafana 3000:80`, затем http://localhost:3000
+- Образ: https://hub.docker.com/r/victorialugi/diploma-app
+
+## Скрины
+
+### Приложение
+
+![Название скриншота 1](ссылка на скриншот 1)
+
+### Grafana
+
+![Название скриншота 1](ссылка на скриншот 1)
+
+### GitHub Actions
+
+![Название скриншота 1](ссылка на скриншот 1)
+
+### Docker Hub
+
+![Название скриншота 1](ссылка на скриншот 1)
