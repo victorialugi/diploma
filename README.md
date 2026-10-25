@@ -28,16 +28,16 @@
 
 ### Приложение
 
-![Название скриншота 1](ссылка на скриншот 1)
+![9_app.png](https://github.com/victorialugi/diploma/blob/main/9_app.png)
 
 ### Grafana
 
-![Название скриншота 1](ссылка на скриншот 1)
+![7_grafana.png](https://github.com/victorialugi/diploma/blob/main/7_grafana.png)
 
 ### GitHub Actions
 
-![Название скриншота 1](ссылка на скриншот 1)
+![13_action.png](https://github.com/victorialugi/diploma/blob/main/13_action.png)
 
 ### Docker Hub
 
-![Название скриншота 1](ссылка на скриншот 1)
+![11_dockerhub.png](https://github.com/victorialugi/diploma/blob/main/11_dockerhub.png)
