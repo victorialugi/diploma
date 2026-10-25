@@ -1,0 +1,20 @@
+name: Terraform plan
+
+on:
+  pull_request:
+    paths:
+      - "main-infra/**"
+      - "bootstrap/**"
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - name: Terraform plan
+        working-directory: main-infra
+        run: |
+          terraform init -backend=false
+          terraform validate
+          terraform plan -input=false || true
